@@ -5,16 +5,8 @@ Authors@R:
     person("Bautista", "Busso", , "bautibusso06@gmail.com", role = c("aut", "cre"))
 Description: Paquete de practica para leer, procesar y analizar datos
     de estaciones meteorologicas. No esta pensado para uso real.
-License: MIT + file LICENSE
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-Imports: 
-    dplyr,
-    ggplot2,
-    lubridate,
-    readr,
-    tidyr
-Config/roxygen2/version: 8.1.1
-Depends: 
-    R (>= 3.5)
-LazyData: true
+RoxygenNote: 7.0.0

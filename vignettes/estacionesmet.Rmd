@@ -1,0 +1,78 @@
+---
+title: "Cómo usar estacionesmet"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Cómo usar estacionesmet}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(estacionesmet)
+```
+
+`estacionesmet` es un paquete de práctica para leer y analizar datos de
+estaciones meteorológicas del INTA. Esta viñeta muestra cómo usar sus tres
+funciones y el dataset que incluye.
+
+## Los datos
+
+El paquete trae el dataset `estaciones`, con datos diarios de cinco
+estaciones (NH0472, NH0910, NH0046, NH0098 y NH0437).
+
+```{r datos}
+head(estaciones)
+```
+
+La columna `id` identifica la estación, `fecha` es el día de la medición y
+`temperatura_abrigo_150cm` es la temperatura media a 150 cm.
+
+## Descargar los datos de una estación
+
+`descargar_estacion()` descarga el archivo de una estación y lo lee. Recibe
+el identificador de la estación y la ruta donde se guarda el archivo:
+
+``` r
+nh0437 <- descargar_estacion("NH0437", "NH0437.csv")
+```
+
+El resultado es un tibble con las mediciones de esa estación. Si se repite
+para las cinco estaciones y se unen con `rbind()`, se obtiene `estaciones`.
+
+## Tabla resumen de la temperatura
+
+`tabla_resumen_temperatura()` calcula la media y el desvío de la temperatura
+para cada estación. Cada fila es un estadístico y cada columna una estación:
+
+```{r tabla}
+tabla_resumen_temperatura(estaciones)
+```
+
+Funciona con una o más estaciones. Por ejemplo, para dos de ellas:
+
+```{r tabla-dos}
+dos_estaciones <- estaciones[estaciones$id %in% c("NH0437", "NH0046"), ]
+tabla_resumen_temperatura(dos_estaciones)
+```
+
+## Gráfico de la temperatura mensual
+
+`grafico_temperatura_mensual()` grafica el promedio mensual de la
+temperatura de cada estación. Hay que indicar un color por estación en el
+argumento `colores`, y se puede cambiar el título con `titulo` (por defecto
+es "Temperatura").
+
+```{r grafico, fig.width = 7, fig.height = 4}
+grafico_temperatura_mensual(
+  estaciones,
+  colores = c("red", "blue", "darkgreen", "orange", "purple"),
+  titulo = "Temperatura media mensual"
+)
+```
