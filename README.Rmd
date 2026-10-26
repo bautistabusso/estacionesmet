@@ -1,0 +1,67 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# estacionesmet
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+`estacionesmet` es un paquete de **práctica** para leer, procesar y
+analizar datos de estaciones meteorológicas del INTA. Fue creado como
+ejercicio de la materia Programación 2 y no está pensado para uso real.
+
+## Instalación
+
+Podés instalar la versión de desarrollo de `estacionesmet` desde
+[GitHub](https://github.com/) con:
+
+``` r
+# install.packages("pak")
+pak::pak("bautistabusso/estacionesmet")
+```
+
+## Ejemplos
+
+El paquete incluye el dataset `estaciones`, con datos diarios de cinco
+estaciones meteorológicas.
+
+```{r example}
+library(estacionesmet)
+
+head(estaciones)
+```
+
+`tabla_resumen_temperatura()` calcula la media y el desvío de la
+temperatura de cada estación:
+
+```{r tabla}
+tabla_resumen_temperatura(estaciones)
+```
+
+`grafico_temperatura_mensual()` grafica la temperatura media mensual:
+
+```{r grafico, warning = FALSE}
+grafico_temperatura_mensual(
+  estaciones,
+  colores = c("red", "blue", "darkgreen", "orange", "purple"),
+  titulo = "Temperatura media mensual"
+)
+```
+
+Para descargar los datos de una estación se usa `descargar_estacion()`:
+
+``` r
+descargar_estacion("NH0437", "datos/NH0437.csv")
+```
