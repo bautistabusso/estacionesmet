@@ -50,3 +50,6 @@ po/*~
 rsconnect/
 .Rproj.user
 inst/doc
+
+# Archivo que descargan los tests
+tests/testthat/NH0437.csv
