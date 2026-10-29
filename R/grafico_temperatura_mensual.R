@@ -30,7 +30,7 @@ grafico_temperatura_mensual <- function(datos, colores,
     ggplot2::labs(
       title = titulo,
       x = "Mes",
-      y = "Temperatura media (°C)",
-      color = "Estación"
+      y = "Temperatura media (\u00b0C)",
+      color = "Estaci\u00f3n"
     )
 }

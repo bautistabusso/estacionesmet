@@ -4,16 +4,15 @@
 \alias{grafico_temperatura_mensual}
 \title{Gráfico de la temperatura media mensual por estación}
 \usage{
-grafico_temperatura_mensual(datos, colores = NULL, titulo = "Temperatura")
+grafico_temperatura_mensual(datos, colores, titulo = "Temperatura")
 }
 \arguments{
-\item{datos}{Un data frame con las columnas \code{id}, \code{fecha} y
+\item{datos}{Un data.frame con las columnas \code{id}, \code{fecha} y
 \code{temperatura_abrigo_150cm}.}
 
-\item{colores}{Vector de colores, uno por estación. Si es \code{NULL}
-se eligen al azar.}
+\item{colores}{Vector de colores, uno por estación.}
 
-\item{titulo}{Título del gráfico.}
+\item{titulo}{Título del gráfico. Por defecto \code{"Temperatura"}.}
 }
 \value{
 Un objeto ggplot.
@@ -22,7 +21,8 @@ Un objeto ggplot.
 Grafica la evolución de la temperatura media mensual de cada estación.
 }
 \examples{
-\dontrun{
-grafico_temperatura_mensual(estaciones)
-}
+grafico_temperatura_mensual(
+  estaciones,
+  colores = c("red", "blue", "darkgreen", "orange", "purple")
+)
 }

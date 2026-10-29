@@ -1,15 +1,28 @@
 Package: estacionesmet
 Title: Lectura y Analisis de Datos de Estaciones Meteorologicas
 Version: 0.0.0.9000
-Authors@R:
-    person("Bautista", "Busso", , "bautibusso06@gmail.com", role = c("aut", "cre"))
+Authors@R: c(
+    person("Bautista", "Busso", , "bautibusso06@gmail.com", role = c("aut", "cre")),
+    person("Agustin", "Garro", , "agustingarro08@gmail.com", role = "aut")
+  )
 Description: Paquete de practica para leer, procesar y analizar datos
     de estaciones meteorologicas. No esta pensado para uso real.
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.0.0
+Config/roxygen2/version: 8.1.1
+Imports: 
+    dplyr,
+    ggplot2,
+    lubridate,
+    readr,
+    tidyr
+Depends: 
+    R (>= 4.1.0)
+LazyData: true
 Suggests: 
+    knitr,
+    rmarkdown,
     testthat (>= 3.0.0)
+VignetteBuilder: knitr
 Config/testthat/edition: 3
