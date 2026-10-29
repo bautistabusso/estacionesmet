@@ -143,3 +143,8 @@ Para descargar los datos de una estación se usa `descargar_estacion()`:
 ``` r
 descargar_estacion("NH0437", "datos/NH0437.csv")
 ```
+
+\## Autores
+
+- Bautista Busso (autor y mantenedor)
+- Agustin Garro (autor)
