@@ -136,7 +136,7 @@ Para descargar los datos de una estación se usa
 
 ``` r
 
-descargar_estacion("NH0437", "datos/NH0437.csv")
+descargar_estacion("NH0437", "NH0437.csv")
 ```
 
 \## Autores
