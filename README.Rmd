@@ -66,7 +66,7 @@ grafico_temperatura_mensual(
 Para descargar los datos de una estación se usa `descargar_estacion()`:
 
 ``` r
-descargar_estacion("NH0437", "datos/NH0437.csv")
+descargar_estacion("NH0437", "NH0437.csv")
 ```
 
  ## Autores
