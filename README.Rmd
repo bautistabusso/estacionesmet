@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 # estacionesmet
 
 <!-- badges: start -->
+[![R-CMD-check](https://github.com/bautistabusso/estacionesmet/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/bautistabusso/estacionesmet/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 `estacionesmet` es un paquete de **práctica** para leer, procesar y
