@@ -8,6 +8,8 @@
 [![R-CMD-check](https://github.com/bautistabusso/estacionesmet/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/bautistabusso/estacionesmet/actions/workflows/R-CMD-check.yaml)
 [![Codecov test
 coverage](https://codecov.io/gh/bautistabusso/estacionesmet/graph/badge.svg)](https://app.codecov.io/gh/bautistabusso/estacionesmet)
+[![Lifecycle:
+experimental](https://lifecycle.r-lib.org/articles/figures/lifecycle-experimental.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
 `estacionesmet` es un paquete de **práctica** para leer, procesar y
