@@ -8,14 +8,17 @@
 
 ## Citation
 
+Source:
+[`DESCRIPTION`](https://github.com/bautistabusso/estacionesmet/blob/main/DESCRIPTION)
+
 Busso B, Garro A (2026). *estacionesmet: Lectura y Analisis de Datos de
 Estaciones Meteorologicas*. R package version 0.0.0.9000,
-<https://bautistabusso.github.io/estacionesmet/>.
+<https://github.com/bautistabusso/estacionesmet>.
 
     @Manual{,
       title = {estacionesmet: Lectura y Analisis de Datos de Estaciones Meteorologicas},
       author = {Bautista Busso and Agustin Garro},
       year = {2026},
       note = {R package version 0.0.0.9000},
-      url = {https://bautistabusso.github.io/estacionesmet/},
+      url = {https://github.com/bautistabusso/estacionesmet},
     }
