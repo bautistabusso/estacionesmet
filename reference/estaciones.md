@@ -39,7 +39,7 @@ Un tibble con 95681 filas y 35 columnas. Algunas de ellas:
 
 - humedad_media_8_14_20:
 
-  Humedad media (%).
+  Humedad media (en porcentaje).
 
 - velocidad_viento_200cm_media:
 
