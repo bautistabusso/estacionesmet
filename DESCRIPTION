@@ -26,4 +26,6 @@ Suggests:
     testthat (>= 3.0.0)
 VignetteBuilder: knitr
 Config/testthat/edition: 3
-URL: https://bautistabusso.github.io/estacionesmet/
+URL: https://github.com/bautistabusso/estacionesmet,
+    https://bautistabusso.github.io/estacionesmet/
+BugReports: https://github.com/bautistabusso/estacionesmet/issues
