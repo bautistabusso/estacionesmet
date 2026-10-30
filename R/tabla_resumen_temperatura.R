@@ -12,9 +12,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
 #' tabla_resumen_temperatura(estaciones)
-#' }
 tabla_resumen_temperatura <- function(datos) {
   datos |>
     dplyr::group_by(id) |>

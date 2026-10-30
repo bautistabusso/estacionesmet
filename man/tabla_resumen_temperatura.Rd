@@ -20,7 +20,5 @@ estación y devuelve una tabla con una fila por estadístico y una
 columna por estación.
 }
 \examples{
-\dontrun{
 tabla_resumen_temperatura(estaciones)
-}
 }
