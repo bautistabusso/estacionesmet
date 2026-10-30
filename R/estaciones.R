@@ -11,7 +11,7 @@
 #'   \item{temperatura_abrigo_150cm_maxima}{Temperatura máxima a 150 cm (°C).}
 #'   \item{temperatura_abrigo_150cm_minima}{Temperatura mínima a 150 cm (°C).}
 #'   \item{precipitacion_pluviometrica}{Precipitación (mm).}
-#'   \item{humedad_media_8_14_20}{Humedad media (%).}
+#'   \item{humedad_media_8_14_20}{Humedad media (en porcentaje).}
 #'   \item{velocidad_viento_200cm_media}{Velocidad media del viento a 200 cm.}
 #' }
 #' Las demás columnas son otras variables de temperatura, viento,
