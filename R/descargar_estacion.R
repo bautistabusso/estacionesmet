@@ -23,5 +23,5 @@ descargar_estacion <- function(id, ruta) {
   if (!file.exists(ruta)) {
     utils::download.file(url = url, destfile = ruta)
   }
-  readr::read_csv(ruta)
+  readr::read_csv(ruta, guess_max = Inf)
 }
